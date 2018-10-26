@@ -2,8 +2,8 @@
 Exam 3, problem 4.
 
 Authors: David Mutchler, Dave Fisher, Matt Boutell, their colleagues,
-         and PUT_YOUR_NAME_HERE.  October, 2018.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         and Harry Chen.  October, 2018.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
 def main():
@@ -46,7 +46,7 @@ def shape(n):
     [But handling patterns with more than 1 digit is just 1 point of the exam!]
 
     It looks like this example for n=5:
-    1 ** 54321
+****1 ** 54321
    12 *** 4321
   123 **** 321
  1234 ***** 21
@@ -76,8 +76,24 @@ And this one for n=14:
 
     :type n: int
     """
+    index = n
+    for k in range(n):
+        for t in range(n-k-1):
+            print(' ',end='')
+        for j in range(k+1):
+            print((j+1)%10,end='')
+        print(' ',end='')
+        for e in range(k+2):
+            print('*',end='')
+        print(' ', end='')
+        for s in range (k,n,1):
+            print((n-s)%10,end='')
+        index -=1
+        print()
+
+
     # ------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # DONE: 2. Implement and test this function.
     #          Some tests are already written for you (above).
     ####################################################################
     # IMPORTANT: In your final solution for this problem,
