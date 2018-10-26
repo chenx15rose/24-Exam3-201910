@@ -46,7 +46,7 @@ def shape(n):
     [But handling patterns with more than 1 digit is just 1 point of the exam!]
 
     It looks like this example for n=5:
-****1 ** 54321
+    1 ** 54321
    12 *** 4321
   123 **** 321
  1234 ***** 21
